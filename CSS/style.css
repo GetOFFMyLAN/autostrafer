@@ -1,0 +1,28 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto');
+/* font usage:
+    - Raleway: font-family: 'Raleway', sans-serif;
+    - Open Sans: font-family: 'Open Sans', sans-serif;
+    - Robot: font-family: 'Roboto', sans-serif;
+*/
+
+body {
+	background-color: #000;
+}
+
+.title {
+	color: #fff;
+	margin: auto;
+	text-align: center;
+	font-family: 'Robot', sans-serif;
+	letter-spacing: 5px;
+}
+
+.subtitle {
+	color: #fff;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+	font-family: 'Robot', sans-serif;
+	letter-spacing: 3px;
+}
