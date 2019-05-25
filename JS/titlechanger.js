@@ -1,28 +1,27 @@
 var index = 0;
 var titleArr = [
-	"utostrafer.cc　a",
-	"tostrafer.cc　au",
-	"ostrafer.cc　aut",
-	"strafer.cc　auto",
-	"trafer.cc　autos",
-	"rafer.cc　autost",
-	"afer.cc　autostr",
-	"fer.cc　autostra",
-	"er.cc　autostraf",
-	"r.cc　autostrafe",
-	".cc　autostrafer",
-	"cc　autostrafer.",
-	"c　autostrafer.c",
-	"　autostrafer.cc",
-	"autostrafer.cc "
+	"a",
+	"au",
+	"aut",
+	"auto",
+	"autos",
+	"autost",
+	"autostr",
+	"autostra",
+	"autostraf",
+	"autostrafe",
+	"autostrafer",
+	"autostrafer.",
+	"autostrafer.c",
+	"autostrafer.cc"
 ];
 
 function changeTitle() {
 	document.title = titleArr[index];
 	index++;
 	if (index == titleArr.length) {
-			index = 0;
+		index = 0;
 	}
 };
 
-window.setInterval(changeTitle, 1000);
+window.setInterval(changeTitle, 500);
