@@ -41,9 +41,8 @@ function displayHeader() {
 			index = 0;
 		}
 	};
-	
+
 	window.setInterval(lines, 600);
 }
 
 displayTitle();
-displayHeader();
