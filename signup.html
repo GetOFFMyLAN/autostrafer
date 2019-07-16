@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>autostrafer.cc</title>
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="./CSS/style.css"/>
+
+		<!-- Scripts --><!-- TODO: replace dev keys with real site keys when finished -->
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+		<script>
+		function errorMsg() {
+			document.getElementById('msg-ret').innerHTML= 'ERROR: Something went wrong. Please try again later';
+		}
+		</script>
+
+	</head>
+
+	<!-- You agree to explicitly inform visitors to your site that you have implemented reCAPTCHA v3 on your site and that their use of reCAPTCHA v3 is subject to the Google Privacy Policy and Terms of Use. reCAPTCHA may only be used to fight spam and abuse on your site. reCAPTCHA must not be used for any other purposes such as determining credit worthiness, employment eligibility, financial status, or insurability of a user.
+		By accessing or using the reCAPTCHA APIs, you agree to the Google APIs Terms of Use, Google Terms of Use, and to the Additional Terms below. Please read and understand all applicable terms and policies before accessing the APIs. -->
+
+	<body>
+		<div class="container-crosshair">
+			<div class="sign-up-form">
+				<div class="signup-container"> <!--TODO: fix styling (add background and border to form) -->
+					<form>
+						<p class="label">Username:</p>
+						<input class="sign-in-input" type="text" placeholder="username" name="username" id="username-input">
+
+						<p class="label">Email:</p>
+						<input class="sign-in-input" type="email" placeholder="email" name="email" id="email-input">
+
+						<p class="label">Password:</p>
+						<input class="sign-in-input" type="password" placeholder="password" name="password" id="pass-input">
+						<input class="sign-in-input" type="password" placeholder="confirm password" name="conf-password" id="conf-pass-input">
+
+						<p class="label">Steam ID:</p>
+						<input class="sign-in-input" type="number" placeholder="steam id" name="steam-id-input" id="steam-id-input">
+
+						<p class="label">Invite Code:</p>
+						<input class="sign-in-input" type="number" placeholder="invite code" name="inv-code" id="inv-code-input">
+
+						<div class="g-recaptcha" data-sitekey="6LdqyKcUAAAAAD_LUcVIZJ4ZcD2fXnPoU4NMQSaq" data-theme="dark"></div>
+						<a class="form-btn" id="signup-btn" href="#" style="margin-left: auto;" onclick="errorMsg()">Sign Up</a>
+						<p id="msg-ret" style="color: #700000; font-family: sans-serif; font-size: 12px;"></p>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="./JS/modifiers.js"></script>
+	</body>
+</html>
